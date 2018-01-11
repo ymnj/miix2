@@ -17,10 +17,10 @@
         </a>
       <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">Home</a></li>
-        <li><a href="badges.html">Team</a></li>
-        <li><a href="collapsible.html">Showcase</a></li>
-        <li><a href="mobile.html">Contact</a></li>
+        <li><a href="#introduction">Home</a></li>
+        <li><a href="#introduction">Team</a></li>
+        <li><a href="#introduction">Showcase</a></li>
+        <li><a href="#introduction">Contact</a></li>
       </ul>
       <ul class="side-nav" id="mobile">
         <li class="mobile-menu-image">

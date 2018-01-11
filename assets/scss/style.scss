@@ -13,9 +13,21 @@ Tags: grid-layout, footer-widgets, blog, education, e-commerce
 This theme, like WordPress, is licensed under the GPL.
 */
 
+/**********************
+Colors
+**********************/
 $miix_grey_dark: #585757;
 $miix_grey_light: #9d9c9c;
 $black: #000;
 $white: #fff;
+
+
+/**********************
+Fonts
+**********************/
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300|Raleway:100,300|Open+Sans+Condensed:300');
+$font-raleway: 'Raleway', sans-serif;
+$font-josefin: 'Josefin Sans', sans-serif;
+$font-open:  'Open Sans Condensed', sans-serif;
 
 @import 'main';
