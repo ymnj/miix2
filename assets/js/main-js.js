@@ -23,6 +23,8 @@ jQuery( document ).ready(function() {
   // initialise
   headroom.init();
 
+  //Smooth-scrollbar
+
 
   //Materialize ScrollSpy init
   jQuery('.scrollspy').scrollSpy({

@@ -1,179 +1,9 @@
-
-
-/**********************
-General
-**********************/
-html {
-  font-size: 16px;
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3, h4{
-  margin: 0;
-  padding: 0;
-}
-
-
-/**********************
-Navigation
-**********************/
-body {
-  background: $white;
-}
-
-nav {
-    height: 128px;
-    line-height: 128px;
-    box-shadow: none;
-    background: transparent;
-    z-index: 5;
-
-    @media only screen and (min-width: 993px){
-      ul a {
-        color: $white;
-        line-height: 0;
-        margin-top: 64px;
-        &:hover {
-          background-color: transparent;
-          cursor: pointer;
-        }
-      }
-    }
-}
-
-nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
-    height: 128px;
-    line-height: 128px;
-}
-
-nav .button-collapse i {
-    height: 128px;
-    line-height: 128px;
-}
-
-
-nav .brand-logo { 
-    font-size: 1.6rem;
-    max-height: 108px;
-    padding-top: 10px;
-    display: none;
-}
-
-nav .brand-logo img {
-  max-height: 108px;
-}
-
-@media only screen and (min-width: 601px){
-    nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-      height: 128px;
-      line-height: 128px;
-    }
-}
-
-@media only screen and (min-width: 993px){
- nav .brand-logo {
-    display: block;
-  }
-}
-
-.mobile-menu-image {
-  background: url();
-}
-
-#sidenav-overlay {
-  background-color: rgba(0,0,0,0);
-}
-
-//HeadroomJS CSS
-.navbar-fixed {
-  position: relative;
-  height: 128px;
-  transition: all 400ms ease;
-  top: 0;
-  &.slideUp{
-    top: -128px;
-  }
-  &.slideDown {
-    top: 0px;
-  }
-}
-
-/**********************
-Video Banner
-**********************/
-.video-container {
-  position: relative;
-  //z-index: -5;
-  top: -128px;
-  min-width: 100%;
-  min-height: 100%;
-
-  &:after {
-    content: "";
-    position: absolute;
-    z-index: 4;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.3);
-  }
-}
-
-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-}
-
-.mobile-brand {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 5;
-
-  img {
-    max-width: 250px;
-  }
-
-  @media only screen and (min-width: 993px){
-    display: none;
-  }
-}
-
-.arrow-box {
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 60px;
-  height: 60px;
-  // background: url(assets/images/arrow_down.svg);
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  z-index: 15;
-  img {
-    max-width: 60px;
-    max-height: 60px;
-  }
-}
-
 /**********************
 Content Middle
 **********************/
 .content-middle {
   margin-top: -128px;
+  height: 100%;
   
   .title-block {
     padding-left: 1rem;
@@ -260,6 +90,9 @@ Content Middle
     width: 100%;
     padding: 4rem 0;
     transition: all 300ms ease;
+    @media only screen and (min-width: 768px){
+      padding: 6rem 0 2rem 0;
+    }
     @media only screen and (min-width: 992px){
       padding: 12rem 0;
     }
@@ -274,6 +107,22 @@ Content Middle
   }
 
   .services {
+    position: relative;
+    top: -25%;
+    //margin-top: -60%;
+    @media (min-width: 450px){
+      top: -28%;
+    }
+    @media (min-width: 550px){
+      top: -32%;
+    }
+    @media (min-width: 768px){
+      top: -36%;
+    }
+    @media (min-width: 993px){
+      top: 0;
+    }
+
     .row .col {
       padding: 0;
       float: none;
@@ -286,15 +135,11 @@ Content Middle
       position: relative;
       width: 100%;
       padding: 56.25% 0 0; 
-      transition: all 500ms ease;
-
-      //Remove padding on tablet for CTA portraits to be full height
-      @media only screen and (min-width: 992px){
-        //padding: 0;
-      }
+      //transition: all 500ms ease;
 
       img {
         width: 100%;
+        display: block;
         position: absolute;
         top: 0;
         left: 0;
@@ -310,14 +155,11 @@ Content Middle
         position: absolute;
         top: 100%;
         left: 50%;
-        transform: translate(-50%, -20%);
+        transform: translate(-50%, -25%);
         width: 90%;
         height: auto;
         padding: 1rem;
         background-color: white;
-        @media (min-width: 993px){
-          //transform: translate(-50%, 0%);
-        }
         &:after {
           position: absolute;
           content: "";
@@ -340,37 +182,77 @@ Content Middle
           padding-left: 1rem;
           padding-right: 1rem;
         }
+
+        @media (min-width: 993px){
+          min-height: 150px;
+        }
       }
 
       &.cta1 {
         margin-bottom: 190px;
+        img {
+          position: relative;
+        }
+        @media (min-width: 993px){
+          padding: 0%;
+          position: relative;
+          .cta-writeup {
+            transform: translate(-50%, -20%);
+          }
+        }
       }
 
       &.cta2 {
+        margin-bottom: 175px;
         @media (min-width: 993px){
-          float: right;
-          //width: 60%;
           padding: 0%;
-          position: relative;
-          bottom: 250px;
+          bottom: 300px;
+          height: 33vw;
           .cta-writeup {
-            // min-width: 318.859px;
-            // left: 0%;
-            // left: auto;
-
-            // transform: translate(0,0);
+            transform: translate(-50%, 5%);
             &:after {
               left: 0;
               border-left: 1px solid black;
               border-bottom: 1px solid black;
               border-right: 0;
+            }
           }
+          .service-img-wrap {
+            max-width: 70%;
+            float: right;
           }
           img {
-            width: 60%;
-            float: right;
             position: relative;
           }
+        }
+      }
+
+      &.cta3 {
+        @media (min-width: 993px){
+          bottom: 500px;
+          height: 33vw;
+          padding: 0;
+          .service-img-wrap {
+            max-width: 70%;
+            height: 100%;
+          }
+          img {
+            height: 100%;
+            position: relative;
+          }
+          .cta-writeup {
+            left: 0;
+            transform: translate(-28%, -17%);
+            &:after {
+              left: 0;
+              border-left: 1px solid black;
+              border-bottom: 1px solid black;
+              border-right: 0;
+            }
+          }
+        }
+        @media (min-width: 1400px){
+          bottom: 600px;
         }
       }
     }
