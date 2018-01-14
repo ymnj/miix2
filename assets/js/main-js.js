@@ -23,7 +23,8 @@ jQuery( document ).ready(function() {
   // initialise
   headroom.init();
 
-  //Smooth-scrollbar
+  //Rellax Parralex
+  //var rellax = new Rellax('.rellax');
 
 
   //Materialize ScrollSpy init

@@ -6,6 +6,8 @@
     <?php get_template_part('/sections/section', 'intro') ?>
 
     <?php get_template_part('/sections/section', 'services') ?>
+
+    <?php get_template_part('/sections/section', 'full-cta') ?>
   </div>
   
 

@@ -4,7 +4,9 @@
     <div class="row">
     <div class="col m12 l6">
      <div class="service cta1">
-       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/services_cta1.jpg" alt="Services CTA 1">
+       <div class="service-img-wrap">
+         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/services_cta1.jpg" alt="Services CTA 1">
+       </div>
        <div class="cta-writeup">
         <h1>02</h1>
         <h2>Cost</h2> 
@@ -14,7 +16,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row up-shift">
     <div class="col m12 l6 offset-l6">
       <div class="service cta2">
         <div class="service-img-wrap">
@@ -29,7 +31,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row up-shift">
     <div class="col m12 l6">
       <div class="service cta3">
         <div class="service-img-wrap">
@@ -43,5 +45,4 @@
       </div>
     </div>
   </div>
-
 </section>
