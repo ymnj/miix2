@@ -15,7 +15,7 @@
         <a href="#!" class="brand-logo">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/images/miix_logo_white.png" alt="Miix Interiors Brand">
         </a>
-      <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="#" data-activates="mobile" class="button-collapse btn-floating btn-large scale-transition"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#introduction">Home</a></li>
         <li><a href="#introduction">Team</a></li>
@@ -24,7 +24,6 @@
       </ul>
       <ul class="side-nav" id="mobile">
         <li class="mobile-menu-image">
-          
         </li>
         <li><a href="sass.html">Home</a></li>
         <li><a href="badges.html">Team</a></li>

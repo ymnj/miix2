@@ -78,15 +78,16 @@ nav .brand-logo img {
   top: 0;
   &.slideUp{
     top: -128px;
+    background: transparent;
   }
   &.slideDown {
     top: 0px;
   }
 }
+//.headroom--not-top.headroom--not-bottom.slideUp #main-nav
 
 @media (min-width: 993px){
-  .headroom--not-top.slideDown #main-nav,
-  .headroom--not-top.headroom--not-bottom #main-nav{
+  .headroom--not-top.slideDown #main-nav {
     transition: all 200ms;
     background: black;
   }

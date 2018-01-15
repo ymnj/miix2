@@ -7,6 +7,8 @@
 
     <?php get_template_part('/sections/section', 'services') ?>
 
+    <?php get_template_part('/sections/section', 'testimonial') ?>
+
     <?php get_template_part('/sections/section', 'full-cta') ?>
   </div>
   

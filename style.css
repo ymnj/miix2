@@ -34,6 +34,13 @@ h1, h2, h3, h4 {
   margin: 0;
   padding: 0; }
 
+.custom-btn {
+  border: 1px solid #000;
+  margin-top: 2rem;
+  padding: 1rem;
+  color: #229C8F;
+  font-family: "Josefin Sans", sans-serif; }
+
 /**********************
 Navigation
 **********************/
@@ -93,13 +100,13 @@ nav .brand-logo img {
   transition: all 400ms ease;
   top: 0; }
   .navbar-fixed.slideUp {
-    top: -128px; }
+    top: -128px;
+    background: transparent; }
   .navbar-fixed.slideDown {
     top: 0px; }
 
 @media (min-width: 993px) {
-  .headroom--not-top.slideDown #main-nav,
-  .headroom--not-top.headroom--not-bottom #main-nav {
+  .headroom--not-top.slideDown #main-nav {
     transition: all 200ms;
     background: black; } }
 /**********************
@@ -160,6 +167,8 @@ Content Middle
 .content-middle {
   margin-top: -128px;
   height: 100%; }
+  .content-middle .col {
+    width: 100%; }
   .content-middle .title-block {
     padding-left: 1rem;
     position: relative; }
@@ -196,6 +205,8 @@ Content Middle
     border-right-color: transparent;
     border-bottom-color: #000;
     border-left-color: #000; } }
+  .content-middle #intro-sub-titles li {
+    opacity: 0; }
   .content-middle .sub-titles {
     font-weight: 300;
     font-size: 2.5rem;
@@ -231,6 +242,11 @@ Content Middle
       padding-bottom: 1rem; }
     .content-middle .introduction .sub-titles {
       margin: 1rem 2.5rem; }
+  .content-middle #services .container div:last-child {
+    margin-bottom: 20px; }
+  @media (min-width: 1400px) {
+    .content-middle #services {
+      margin-bottom: -276px; } }
   .content-middle .services .row {
     margin-bottom: 180px; }
     @media (min-width: 993px) {
@@ -239,7 +255,7 @@ Content Middle
     @media (min-width: 1400px) {
       .content-middle .services .row.up-shift {
         position: relative;
-        top: -100px; } }
+        top: -200px; } }
   .content-middle .service {
     position: relative; }
     .content-middle .service .cta-writeup {
@@ -294,11 +310,44 @@ Content Middle
           border-left: 1px solid black;
           border-bottom: 1px solid black;
           border-right: 0; } }
+  .content-middle .portfolio-cta {
+    width: 100%; }
+    .content-middle .portfolio-cta h2 {
+      font-family: "Raleway", sans-serif;
+      margin-bottom: 1rem;
+      font-size: 2.5rem; }
+    .content-middle .portfolio-cta p {
+      margin: 2rem auto 3rem; }
+  .content-middle .services-clear {
+    min-height: 180px; }
+    .content-middle .services-clear.large {
+      display: none; }
+  @media (min-width: 993px) {
+    .content-middle .services-clear, .content-middle .services-clear.large {
+      display: block;
+      min-height: 230px;
+      background: transparent; } }
+  .content-middle #testimonial {
+    position: relative; }
+    .content-middle #testimonial h2 {
+      font-family: "Raleway", sans-serif;
+      margin-bottom: 1rem;
+      font-size: 2.5rem; }
+    .content-middle #testimonial blockquote {
+      width: 80%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-left: none; }
+    .content-middle #testimonial .carousel.carousel-slider {
+      margin-top: -120px; }
+    .content-middle #testimonial .indicators .indicator-item {
+      border: 1px solid #000; }
+      .content-middle #testimonial .indicators .indicator-item.active {
+        background: #000; }
   .content-middle #full-cta {
     height: 500px;
     background: #000; }
-    @media (min-width: 993px) {
-      .content-middle #full-cta {
-        margin-top: 400px; } }
 
 /*# sourceMappingURL=style.css.map */

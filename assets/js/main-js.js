@@ -26,11 +26,15 @@ jQuery( document ).ready(function() {
   //Rellax Parralex
   //var rellax = new Rellax('.rellax');
 
+  //Materialize Testimonial init
+
+  jQuery('.carousel').carousel();
+  // jQuery('.parallax').parallax();
 
   //Materialize ScrollSpy init
-  jQuery('.scrollspy').scrollSpy({
-    scrollOffset: 0
-  });
+  // jQuery('.scrollspy').scrollSpy({
+  //   scrollOffset: 0
+  // });
 
   //Materialize scrollFire init
   var options = [
